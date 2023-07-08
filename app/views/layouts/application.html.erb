@@ -6,6 +6,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+     <script src="https://kit.fontawesome.com/0ef9c46843.js" crossorigin="anonymous"></script>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -16,7 +17,7 @@
         <%= link_to "Home", root_path %>
      </li>
      <li>
-        <%= link_to "Users", 
+        <%= link_to "Users",
      </li>
      <li>
        <%= link_to "Log out", destroy_user_sesseion_path, method: :delete %>
@@ -30,12 +31,12 @@
      </li>
      <% end %>
    </div>
-   
+
   </header>
   <body>
     <%= yield %>
   </body>
   <footer>
-      
+
   </footer>
 </html>
