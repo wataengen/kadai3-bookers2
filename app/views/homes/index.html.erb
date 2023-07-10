@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kadai3Bookers2</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    
+
+  </head>
+
   <body>
     <main>
-    <% if user_signed_in? %>
-     <li>
-       <%= link_to "Log out", destroy_user_sesseion_path, method: :delete %>
-     </li>
-    <% else %>
+
      <li>
        <%= link_to "Sing up", new_user_registration_path %>
      </li>
      <li>
        <%= link_to "Log in", new_user_session_path %>
      </li>
-    <% end %>
+
     </main>
-   
+
   </body>
 </html>
